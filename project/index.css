@@ -1,0 +1,296 @@
+body{
+    background-color: rgba(217, 221, 225, 0.744);
+    /* font-family: Arial,Helvetica,sans-serif; */
+    
+}
+.big-body{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 0px 100px ;
+}
+
+/* header */
+header{
+    background-color: rgb(9, 159, 240);
+    height: 138px;
+}
+
+.logo{
+    float:left;
+    width: 30%;
+}
+.logo img{
+    width: 100%;
+    height: 138px;
+}
+
+.metric{
+    width: 30%;
+    padding-top: 12px;
+    font-size: 300%;
+    font-weight: bold;
+    float: left;
+    padding-left: 20px;
+}
+.metric a{
+    text-decoration: none;
+    color: black;
+}
+.menu{
+    display: flex;
+    justify-content:space-around;
+    
+}
+.menu a{
+    margin-top: 110px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+a:hover{
+    color: black;
+}
+
+/* breadcrumb */
+    /* Style the list */
+    ul.breadcrumb {
+        padding: 0px ;
+        list-style: none;
+    }
+    /* Display list items side by side */
+    ul.breadcrumb li {
+        display: inline;
+        font-size: 15px;
+    }
+    /* Add a slash symbol (/) before/behind each list item */
+    ul.breadcrumb li+li:before {
+        padding: 2px;
+        color: black;
+        content: "/\00a0";
+    }
+    /* Add a color to all links inside the list */
+    ul.breadcrumb li a {
+        color: #0275d8;
+    }
+    /* Add a color on mouse-over */
+    ul.breadcrumb li a:hover {
+        color: #01447e;
+        text-decoration: underline;
+    }
+
+/* side bar */
+.side-bar{
+    float: right;
+    /* position: relative;
+    display: inline-block; */
+    margin: 0 0 0 30px;
+    max-width: 250px;
+    width: 100%;
+}
+.menu-sidebar{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: rgb(9, 159, 240);
+}
+
+.sidebar{
+    color: white;
+    text-decoration: none;
+}
+.sidebar:hover{
+    color: black;
+    transition: 0.5s;
+}
+
+a.active, a#active{
+    color: yellow;
+}
+
+/* hover thanh menu sidebar thử nghiệm */
+.submenu{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+}
+.submenu-content {
+    display: none;
+    position: relative;
+    background-color: #f1f1f1;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    /* opacity: 0;
+    visibility: hidden;
+    transition: opacity 500ms, visibility 500ms; */
+
+}
+.submenu-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+
+}
+/* .submenu:hover .sidebar {
+    background-color: #3e8e41;
+} */
+.submenu:hover .submenu-content {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    animation: fade 2s;
+}
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.submenu-content a:hover {
+    background-color: #ddd;
+}
+
+/* footer */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgb(201, 198, 198);
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+footer a:hover{
+    color: blue;
+}
+
+/* homepage */
+.main{
+    text-align: center;
+}
+.h3-font{
+    padding: 0px 250px;
+    font-weight: 700;
+}
+.h4{
+    margin-left: -55%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: lighter;
+}
+
+/* table */
+            
+.table-1{
+    margin: auto ;
+    border-collapse: collapse;
+    font-weight: bold;
+    background-color: rgb(9, 159, 240);
+    /* table-layout: fixed; */
+
+}
+.table-1 td,tr{
+    /* margin: auto ; */
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 10px 0px;
+    width: 33% ;
+}
+.table-1 a{
+    text-decoration: none;
+    color: black;
+}
+.table-1 a:hover{
+    color: white;
+}
+
+.table-2{
+    margin: auto;
+    border-collapse: collapse;
+    font-weight: bold;
+    background-color: rgb(216, 208, 208);
+
+    /* table-layout: fixed; */
+}
+.table-2 td,tr{
+    /* margin: auto ; */
+    border: 1px solid;
+    border-collapse: collapse;
+    padding: 5px;
+    width: 33% ;
+}
+.table-2 a{
+    text-decoration: none;
+    color: black;
+}
+.table-2 a:hover{
+    color: blue;
+}
+
+/* [Parent] converter */
+.calculator-parent{
+
+}
+.parent{
+    width: 500px;
+    height: auto;
+    border: 1px solid transparent;
+    padding-left: 5px;
+}
+.parent-left{
+    float: left;
+    margin-right: 30px;
+}
+.parent-left option{
+    font-weight: 500;
+}
+.parent-left input{
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+}
+.parent-right{
+    padding: 0px 5px;
+}
+.parent-right input{
+    width: 220px;
+    height: 30px;
+    border-radius: 5px;
+}
+/* .parent-background{
+    background-color: white;
+    float: left;
+    border: 1px solid;
+    border-color: rgba(53, 38, 38, 0.668);
+    height: 187px;
+    width: 217px;
+    padding: 0px 5px;
+    font-size: 14.5px;
+    font-family:Arial, Helvetica, sans-serif
+} */
+
+/* [Child] converter */
+
+.text-content{
+    text-align: justify;
+}
+
+
+
+
+
+

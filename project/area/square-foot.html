@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrenheit Conversion</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        h1{
+            color: black;
+            font-size: 30px;
+            text-align: center;
+            line-height: 35px;
+            height: 50px;
+            background-repeat: no-repeat;
+        }   
+        #userInput{
+            text-align: center;
+            background-color: #0b6991;
+            margin: 0 0 2px;
+            padding: 2% 5%;
+            width: 90%;
+            line-height: 24px;
+        }
+        #convertForm {
+            height: 60px;
+        }
+        .inputField, .inputFieldNE, .searchField {
+            font-size: 24px;
+            border: 1px solid #064d6b;
+            padding: 0 0 0 3%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big-body">
+        <header>
+            <div class="logo"><a href="/code/doan/index.html"><img src="/code/doan/image/ruler.png" alt="Logo"></a></div>
+            <div class="metric"><a href="/code/doan/index.html">METRIC <br> CONVERSION</a></div>
+            <div class="menu">
+                <a href="/code/doan/about.html" class="">About Us</a>
+                <a href="/code/doan/info.html" class="">Info</a>
+                <a href="/code/doan/faqs.html" class="">FAQs</a>
+                <a href="" class="">Sitemap</a>
+            </div>
+        </header>
+
+        <ul class="breadcrumb">
+            <li><a href="index.html">Home</a></li>
+            <li>Square Inches Conversion</li>
+        </ul>
+
+        <h1>Square Inches Conversion</h1>
+        <section id="userInput">
+            <h2>Use the search box to find your required metric converter</h2>
+            <form autocomplete="off" id="convertForm">
+                <p>
+                    <input name="query" id="queryFrom" class="searchField" value="Square Foot" type="search">
+                    →
+                    <input name="query" id="queryTo" class="searchField" placeholder="acres" type="search" autofocus="">
+                </p>
+                <input type="hidden" name="type" id="type" value="1">
+                <input type="hidden" name="from" id="from" value="1">
+                <input type="hidden" name="to" id="to" value="">
+            </form>
+        </section>
+
+        <div class="side-bar">
+            <div class="submenu">
+                <a href="/code/doan/temperature.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-temperature-low"></i> TEMPERATURE</div></a>
+                <div class="submenu-content">
+                    <a href="/code/doan/temperature/celcius.html" class="active"></a>
+                    <a href="/code/doan/temperature/fahrenheit.html" class=""></a>
+                    <a href="/code/doan/temperature/kelvin.html" class=""></a>
+                </div>
+            </div>
+            <div class="submenu">
+                <a href="/code/doan/area.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-globe"></i> AREA</div></a>
+                <div class="submenu-content">
+                    <a href="" class="">Square Millimeter</a>
+                    <a href="" class="">Square Centimeter</a>
+                    <a href="" class="">Square Meter</a>
+                    <a href="" class="">Hectares</a>
+                    <a href="" class="">Square Inch</a>
+                    <a href="" class="">Square Foot</a>
+                    <a href="" class="">Square Mile</a>
+                    <a href="" class="">Acres</a>
+                </div>
+            </div>
+            <div class="submenu">
+                <a href="/code/doan/length.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-ruler"></i> LENGTH</div></a>
+                <div class="submenu-content">
+                    <a href="" class="">Millimeter</a>
+                    <a href="" class="">Centimeter</a>
+                    <a href="" class="">Meter</a>
+                    <a href="" class="">Kilometer</a>
+                    <a href="" class="">Inch</a>
+                    <a href="" class="">Foot</a>
+                    <a href="" class="">Yard</a>
+                    <a href="" class="">Mile</a>
+                </div>
+            </div>
+            <div class="submenu">
+                <a href="/code/doan/mass.html" class="sidebar"><div class="menu-sidebar"><i class='fas fa-balance-scale'></i> MASS</div></a>
+                <div class="submenu-content">
+                    <a href="" class="">Gram</a>
+                    <a href="" class="">Kilogram</a>
+                    <a href="" class="">Metric Ton</a>
+                    <a href="" class="">Ounce</a>
+                    <a href="" class="">Pound</a>
+                    <a href="" class="">Short Ton</a>
+                </div>
+            </div>
+            <div class="submenu">
+                <a href="/code/doan/volume.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-flask-vial"></i> VOLUME</div></a>
+                <div class="submenu-content">
+                    <a href="" class="">Mililiter</a>
+                    <a href="" class="">Liter</a>
+                    <a href="" class="">Cubic Meter</a>
+                    <a href="" class="">Cubic Foot</a>
+                    <a href="" class="">Cubic Yard</a>
+                    <a href="" class="">Gallon</a>
+                    <a href="" class="">Fluid Ounce</a>
+                </div>
+            </div>
+            <div class="submenu">
+                <a href="/code/doan/currency.html" class="sidebar"><div class="menu-sidebar"><i class="fa-solid fa-coins"></i> CURRENCY</div></a>
+                <div class="submenu-content">
+                    
+                </div>
+            </div>
+        </div>
+
+        <dvi class="text-content">
+            <h3>Square Foot</h3>      
+    <div>
+    <p><b>Abbreviation/Symbol:</b></p>
+    <ul>
+        <li>sq ft</li>
+        <li>ft²</li>
+        <li>When describing architecture or real estate, the square foot is often symbolised as a square with a line or slash through it.</li>
+    </ul>
+    <p><b>Unit of:</b></p>
+    <ul><li>Area</li></ul>
+    <p><b>Worldwide use:</b></p>
+    <ul><li>The square foot is used mainly in the United States, Canada and the United Kingdom as a measurement of area.</li></ul>
+    <p><b>Description:</b></p>
+    <p>The square foot is a unit of area used in the imperial and U.S. customary measurement systems.</p>
+    <p>A square measurement is the two-dimensional derivative of a linear measure, so a square foot is defined as the area of a square with sides 1 ft in length.</p>
+    <p><b>Definition:</b></p>
+    <p>In metric terms a square foot is a square with sides 0.3048 metres in length. One square foot is the equivalent to 0.09290304 square metres.</p>
+    <p><b>Common references:</b></p>
+    <ul>
+        <li>The six floors of the White House (Washington D.C., U.S.A.) have a combined floor-space area of approximately 55,000 square feet.</li>
+        <li>In 2003 the average new-build house in the UK had a floor-plan of 818 ft², whereas a new-build house in the United States was on average nearly three times larger, with a floor-plan of 2,300 ft².</li>
+    </ul>
+    <p><b>Usage context:</b></p>
+    <p>The square foot is primarily used to indicate area in architecture, real estate and interior space plans.</p>
+    <p>Square feet can be used to describe the area of any surface such as a floor-plan, wall or roof, whereas acres are used exclusively to describe the area of a parcel of land.</p>
+    <p>1 square foot = approximately 0.000022959 acres.</p>
+    <p>1 acre = 43,560 square feet.</p>
+    <p>To calculate the area of a room in square feet, measure the length and width of the room in feet, then multiply these figures together to give an area in ft².</p>
+    <p>For example, a room measuring 12 ft x 15 ft would be described as having an area of 180 ft² (12 x 15 = 180).</p>
+    <p>When using square feet it is important to remember that the figure in square feet refers to the total area of a given space, not the actual dimensions of that space. For example, a room described as being 20 ft² does not measure 20ft x 20ft, (which would in fact be a 400 ft² room). Rather, a room with sides measuring 4ft x 5ft would have an area of 20 ft².</p>
+    <p><b>Component units:</b></p>
+    <ul>
+        <li>1 ft²  can be subdivided into 144 square inches (Sq In - or squares with sides measuring 1 inch).</li>
+    </ul>
+    <p><b>Multiples:</b></p>
+    <ul>
+        <li>1 square yard (Sq Yd) = 9 ft²</li>
+        <li>One yard is three feet, so a square yard can be imagined as a square with sides of three feet, or a square block comprising nine individual squares with sides one foot in length.</li>
+    </ul>
+        </div>
+
+        <footer>
+            <a href="/code/doan/about.html#term">terms of use</a> |
+            <a href="/code/doan/about.html#policy">privacy policy</a> |
+            <span>@2022 Group 3 T1.2208.M0</span>
+        </footer>
+    </div>
+
+</body>
+
+</html>
